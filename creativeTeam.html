@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <style>
+        header{
+            background-color: rgb(208, 243, 247);
+            & .container{
+                margin:0rem auto;
+                padding:3rem 1rem
+            }
+        }
+        #link1{
+            color:red;
+        }
+    </style>
+    <title>Creative art</title>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <div class="main-heading">
+                <h1 class="flex">collaborative art gallery</h1>
+            </div>
+            <div class="link flex">
+                <ul class="list-item flex">
+                    <li><a class="link-bar"  href="index.html">home</a></li>
+                    <li><a class="link-bar" href="aboutus.html">about as</a></li>
+                    <li><a class="link-bar"id="link1" href="creativeTeam.html">our creative team</a></li>
+                </ul>
+                <div class="login-but flex">
+                    <div class="login-account flex"><a href="login.html">login to your account</a></div>
+                    <div class="join-community flex"><a href="joinCommunity.html">join our community</a></div>
+                </div>
+            </div>
+        </div>      
+    </header>
+       <!-- section5 start -->
+       <section class="section5">
+        <img src="img\Screenshot 2025-03-08 093331.png" alt="img" width="100%" height="auto"/>
+        <div class="sect5-container">
+            <div class="container contect">
+                <div class="text-contain">
+                    <p>artistic collaboration redefined</p>
+                    <h2>a space for innovation</h2>
+                </div>
+                <div class="but-text-contain flex">
+                    <p>we belive that art flourishes in collaboration. our space is designed for artists to explain 
+                        innovative, and create together
+                    </p>
+                    <div>
+                        <div class="input-field">
+                            <input type="text" placeholder="join as in redefining the boundary of art" id="text-holder"/>
+                            <div class="join-community subs flex" id="update">Subscribe for update</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <!-- section5 end -->
+    <script>
+        document.querySelector("#update").addEventListener('click',()=>{
+       let getItem=document.querySelector("#text-holder").value;
+       alert(`you are join to our communimy-your text updated,${getItem}`);
+   })
+  </script>
+</body>
+</html>
